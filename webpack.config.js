@@ -24,6 +24,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             outputPath: 'images',
+            filename: '[name].[ext]',
           }
         }
       },
@@ -33,6 +34,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             outputPath: 'fonts',
+            filename: '[name].[ext]',
           },
         },
       },
@@ -65,8 +67,6 @@ module.exports = {
   devtool: prod ? false: 'source-map',
   devServer: {
     contentBase: 'docs',
-    hot: false,
-    inline: false,
     host: '0.0.0.0',
     disableHostCheck: true
   }
