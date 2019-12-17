@@ -8,9 +8,10 @@ const mode = process.env.NODE_ENV || 'development';
 const prod = mode === 'production';
 
 module.exports = {
-  entry: {
-    index: './src/index.js'
-  },
+  entry: [
+    './src/index.js',
+    './src/styles/index.scss'
+  ],
   output: {
     path: path.resolve(__dirname, 'docs'),
     filename: '[name].js',
