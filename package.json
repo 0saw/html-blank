@@ -1,0 +1,47 @@
+{
+  "name": "html-blank",
+  "version": "1.0.0",
+  "description": "html-blank",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "webpack-dev-server",
+    "build:stats": "cross-env NODE_ENV=production webpack --json > stats.json",
+    "dev:stats": "webpack --json > stats.json"
+  },
+  "keywords": [
+    "webpack",
+    "blank",
+    "html"
+  ],
+  "homepage": "https://github.com/0saw/html-blank#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0saw/html-blank.git"
+  },
+  "author": "Leonid Simusev <1water4you@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "cross-env": "^6.0.3",
+    "css-loader": "^3.3.0",
+    "fibers": "^4.0.2",
+    "file-loader": "^5.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.23.7",
+    "sass-loader": "^8.0.0",
+    "terser-webpack-plugin": "^2.2.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "not ie > 0",
+    "not ie_mob > 0",
+    "not dead"
+  ]
+}
