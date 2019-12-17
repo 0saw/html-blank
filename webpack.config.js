@@ -27,8 +27,13 @@ module.exports = {
         }
       },
       {
-        test: /\.(glsl|vs|fs)$/,
-        loader: 'shader'
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            outputPath: 'fonts',
+          },
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/,
