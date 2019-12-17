@@ -24,7 +24,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             outputPath: 'images',
-            name: '[path][name].[ext]',
+            name: '[name].[ext]',
           }
         }
       },
@@ -34,7 +34,7 @@ module.exports = {
           loader: 'file-loader',
           options: {
             outputPath: 'fonts',
-            name: '[path][name].[ext]',
+            name: '[name].[ext]',
           },
         },
       },
