@@ -67,7 +67,7 @@ module.exports = {
     new CopyPlugin([
       {
         from: path.resolve(__dirname, 'src/images'),
-        to: path.resolve(__dirname, publicDir),
+        to: path.resolve(__dirname, publicDir + '/images'),
       }
     ]),
     new MiniCssExtractPlugin({}),
