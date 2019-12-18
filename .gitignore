@@ -3,3 +3,5 @@
 /package-lock.json
 docs/*
 !docs/.gitkeep
+src/images/*
+!src/images/.gitkeep
